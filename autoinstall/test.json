@@ -1,0 +1,6 @@
+[
+  {"name": "gimp"},
+  {"name": "emacs"},
+  {"name": "ipython"},
+  {"name": "caffeine", "repository": "ppa:caffeine-developers/ppa"}
+]
