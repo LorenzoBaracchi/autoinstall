@@ -58,7 +58,7 @@ def install_standards(stds):
   global quietmode
   packs = ""
   for s in stds:
-    packs = packs + s['name']
+    packs = packs + " " + s['name']
   retcode = sub.call("apt-fast" + " install -y" + packs + quietmode, shell=True)
   return True if retcode==0 else False
 
@@ -84,7 +84,7 @@ def install_nonstandards(repos):
   packs = ""
   for r in repos:
     if not 'added' in r:
-      packs = packs + r['name']
+      packs = packs + " " + r['name']
       sub.call("apt-fast" + " install -y" + packs + quietmode, shell=True)
 
 def main():
