@@ -83,7 +83,7 @@ def install_nonstandards(repos):
   global quietmode
   packs = ""
   for r in repos:
-    if not 'added' in r:
+    if 'added' in r:
       packs = packs + " " + r['name']
       sub.call("apt-fast" + " install -y" + packs + quietmode, shell=True)
 
