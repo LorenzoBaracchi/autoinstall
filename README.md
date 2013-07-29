@@ -44,4 +44,4 @@ Requirements
 
 * jsonpickle: ```pip install jsonpickle```
 
-* termcolor: ```pip install jsonpickle```
+* termcolor: ```pip install termcolor```
